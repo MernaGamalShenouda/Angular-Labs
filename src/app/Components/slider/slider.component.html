@@ -1,0 +1,12 @@
+<div class=" h-50 d-flex flex-column justify-content-center align-items-center" >
+    <div class="mt-5 d-flex justify-content-center align-items-center images-div">
+        <img [src]="imgSrc" class="fixed-size-image"/>
+    </div>
+    <br>
+    <div class="d-flex justify-content-around align-items-center" style="max-width: 30em;">
+        <button class="btn btn-primary mx-2" (click)="prevImg()">Prev</button>
+        <button class="btn btn-primary mx-2" (click)="nextImg()">Next</button>
+        <button class="btn btn-primary mx-2" (click)="slide()">Slide</button>
+        <button class="btn btn-primary mx-2" (click)="stopSlide()">Stop</button>
+    </div>
+</div>
