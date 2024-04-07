@@ -1,9 +1,14 @@
 
-<div class="border" style="width: 40em; height: 100vh">
+<!-- <div class="border" style="width: 40em; height: 100vh">
   <app-slider></app-slider>
   <app-input></app-input>
+</div> -->
+
+
+<div>
+  <!-- Pass Data From Child To Parent (event)="parent" ==> [Child] @Output()event -->
+  <app-registeration (myEvent)="getData($event)"></app-registeration>
+  <!-- Pass Data From Parent To Child [Prop] = "Parent" ==> [Child] @Input()Prop -->
+  <app-students [StudentsFromParent]="Students"></app-students>
 </div>
-
-
-
 
