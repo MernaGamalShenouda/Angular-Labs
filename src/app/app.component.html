@@ -1,14 +1,24 @@
 
+<!-- Lab2 -->
 <!-- <div class="border" style="width: 40em; height: 100vh">
   <app-slider></app-slider>
   <app-input></app-input>
 </div> -->
 
-
-<div>
+<!-- Lab3 -->
+<!-- <div> -->
   <!-- Pass Data From Child To Parent (event)="parent" ==> [Child] @Output()event -->
-  <app-registeration (myEvent)="getData($event)"></app-registeration>
+  <!-- <app-registeration (myEvent)="getData($event)"></app-registeration> -->
   <!-- Pass Data From Parent To Child [Prop] = "Parent" ==> [Child] @Input()Prop -->
-  <app-students [StudentsFromParent]="Students"></app-students>
+  <!-- <app-students [StudentsFromParent]="Students"></app-students> -->
+<!-- </div> -->
+
+<!-- Lab4 -->
+<!-- Routing -->
+<div class="alert alert-dark text-center w-75 m-auto mb-3 mt-2">
+  <app-header></app-header>
 </div>
 
+<div class="alert alert-primary text-center w-75 m-auto mb-3 mt-2">
+  <router-outlet></router-outlet>
+</div>
